@@ -28,7 +28,7 @@ baseurl: "/Website_2" # the subpath of your site, e.g. /blog
 url: "http://127.0.0.1:4000" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
-repository: https://github.com/esteller74/Website_2
+repository: esteller74/Website_2
 
 # Build settings
 # theme: minima
