@@ -21,7 +21,7 @@
 title: Did Covid make us lose sense of the week?
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  AAA Wouhou on va ecrire un super abstract ici 
+ rADAdouille team  
 baseurl: "/Website_2" # the subpath of your site, e.g. /blog
 url: "http://127.0.0.1:4000" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
