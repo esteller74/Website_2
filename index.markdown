@@ -95,15 +95,15 @@ Please, note that the p-value does not reflect any notion of similarity between 
 
 For most countries, no conclusions are evident from the results for mobile devices. From now on, we decide to discard mobile devices and only consider desktop devices. The idea of discarding mobile devices had always been on our minds as the paper _A Large-Scale Characterization of How Readers Browse Wikipedia_ [4] states that Wikipedia sessions from mobile devices increase in the evening suggesting that mobile searches are correspond to activities that belong to all days of the week and that are thus not specific to subgroups of days of the week. 
 
-Thus, to go beyond this and to get a notion of similarity between days of the week, we make use of _*attention vectors*_ as well as the wonderful and illustrative tools: *similarity matrices and hierarchical clustering*.
+Thus, to go beyond this and to get a notion of similarity between days of the week, we make use of _attention vectors_ as well as the wonderful and illustrative tools: **similarity matrices and hierarchical clustering**.
 
-Attention vectors, are a concept introduced in the study _Sudden Attention Shifts on Wikipedia During the COVID-19 Crisis_ [1], which represent the *daily distribution of topics with one entry per topic and entries summing to one*. There are as many attention vectors as days considered in the study and each _attention vector_ has 64 entries.
+Attention vectors are a concept introduced in the study _Sudden Attention Shifts on Wikipedia During the COVID-19 Crisis_ [1], which represent the **daily distribution of topics with one entry per topic and entries summing to one**. There are as many attention vectors as days considered in the study and each _attention vector_ has 64 entries.
 
-What we wish to do is *compare _attention vectors_ from different days of the week and find how close or distant they are*. We create 28-day periods so as to have, for each year and each period, *seven aggregation of attention vectors corresponding to each day of the week* (these aggregations are the sum of the four original attention vectors of the same day contained in the period considered). The next step is to compare inside each period of each year, the seven attention vectors. We use the *cosine similarity and summarize the results in a similarity matrix*. The figure below shows the *mean similarity matrix over all the periods in 2019 for each country studied*. 
+What we wish to do is **compare _attention vectors_ from different days of the week and find how close or distant they are**. We create 28-day periods so as to have, for each year and each period, **seven aggregation of attention vectors corresponding to each day of the week** (these aggregations are the sum of the four original attention vectors of the same day contained in the period considered). The next step is to compare inside each period of each year, the seven attention vectors. We use the **cosine similarity and summarize the results in a similarity matrix**. The figure below shows the *mean similarity matrix over all the periods in 2019 for each country studied*. 
 
-The wonderful thing about the similarity matrix is that it is quite illustrative and easy to read. The results come as no surprise and are quite comforting. *The darker the blue, the more distant the days of the week are based on their respective attention vectors*. We see a pattern that is general for all countries: the top-right squares are darker in color and create a rectangle that separates two lighter colored triangles. These *triangles are the groups of similar days that we’ve been looking for*. 
+The wonderful thing about the similarity matrix is that it is quite illustrative and easy to read. The results come as no surprise and are quite comforting. **The darker the blue, the more distant the days of the week are based on their respective attention vectors**. We see a pattern that is general for all countries: the top-right squares are darker in color and create a rectangle that separates two lighter colored triangles. These **triangles are the groups of similar days that we’ve been looking for**. 
 
-But given that we are engineers, we obviously have a solution to automatically find these groups. To be more precise than our eyes can see, we use *hierarchical clustering to find the two most distinctive groups*. Remember that our goal here is to determine what the identified weekly pattern looks like. A strong pattern is found if the intra-cluster distances are small while the inter-cluster distances are large. And again, we are not let down: these fancy **dendograms show that the typical week of all countries (except Serbia, sorry) has two distinct groups: one containing all the days of the workweek and the other corresponding to the weekend**. 
+But given that we are engineers, we obviously have a solution to automatically find these groups. To be more precise than our eyes can see, we use **hierarchical clustering to find the two most distinctive groups**. Remember that our goal here is to determine what the identified weekly pattern looks like. A strong pattern is found if the intra-cluster distances are small while the inter-cluster distances are large. And again, we are not let down: these fancy **dendograms show that the typical week of all countries (except Serbia, sorry) has two distinct groups: one containing all the days of the workweek and the other corresponding to the weekend**. 
 
 So, let’s summarise things here. If you were wondering if Wikipedia consultations could reveal a certain pattern: the answer is yes. For almost all countries considered, **Wikipedia consultations reveal two distinct groups within 7-day time frames and these groups turn out to be the work-week and the weekend**. 
 
@@ -156,7 +156,7 @@ However other topics were more solicited than usual. It is the case, for example
 
 {% include topics_diff_2019_2020.html %}
 
-# Conclusion 
+# 4. Conclusion 
 
 Finally, what can we conclude from all this?
 
@@ -179,7 +179,7 @@ While our study shows that COVID-19 had no significant impact on how Wikipedia p
 <img align = "center" src="output/days-of-the-week.jpeg" width="70%" height="70%"> 
 
 
-# 4. References
+# 5. References
 
 [1] [M. Ribeiro, K. Gligoric, M. Peyrard, F. Lemmerich, M. Strohmaier, R. West, *"Sudden Attention Shifts on Wikipedia During the COVID-19 Crisis"*, 2020](https://arxiv.org/pdf/2005.08505.pdf)
 
