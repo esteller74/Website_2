@@ -9,7 +9,7 @@ layout: default
 The whole world suffered the consequences of the covid-19 pandemic. The daily life of people and their habits were changed abruptly by the (mobility restricting) sanitary measures put in place in different countries. Before covid, work and leisure defined the different days of the week, creating a certain pattern, which, as we’ll find out, had a periodicity of a week. Now, the interesting question is whether the covid-19 pandemic made us lose sense of this typical week. In other words, what we want to see is if there was a pattern initially, how did it change during covid. Wikipedia is known to be a relatively good measure of people’s search queries and computers and phones are increasingly defining people’s lives. Wikipedia viewership thus has the potential to enlighten us on the changing habits of people as mobility restrictions due to covid happened. We all have a feeling that our routines changed but can we prove it? And can we quantify it? 
 
 
-[![31045677.jpg](https://i.postimg.cc/FshFqWbr/31045677.jpg)](https://postimg.cc/K4sy35sw)
+![image](output/days.jpg)
 
 # 1. Goal of the study
 
@@ -68,7 +68,7 @@ Please, note that the p-value do not reflect any notion of similarity between da
 
 Thus, to get a notion of similarity between days of the week and also between days within a group of days, we decided to calculate **attention vectors and similarity matrices**. The latter will allow us to see inside each group which day is similar to which day and if the similarity is repeated among groups.
 
-[![Av-similarity-matrix.png](https://i.postimg.cc/nchD0b0K/Av-similarity-matrix.png)](https://postimg.cc/gr1j259r)
+![image](output/Av_sim_2019_2020.png)
 
 
 # 3. Does the week change with Covid?
@@ -83,6 +83,8 @@ Thus, to get a notion of similarity between days of the week and also between da
 
 {% include topics_diff_2019_2020.html %}
 
+![image](output/days-of-the-week.jpeg)
+
 
 # 4. References
 
@@ -93,6 +95,3 @@ Thus, to get a notion of similarity between days of the week and also between da
 [3] [K. Gligorić, A. Chiolero, E. Kıcıman, R. W. White, R. West, *"Population-scale dietary interests during the COVID-19 pandemic"*](https://www.nature.com/articles/s41467-022-28498-z)
 
 
-
-
-[![Wikipedia-logo-en-big.png](https://i.postimg.cc/BZrzMTbt/Wikipedia-logo-en-big.png)](https://postimg.cc/SjGVKzWp)
