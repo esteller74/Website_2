@@ -145,6 +145,8 @@ The p-value associated to the coefficient B4 is larger than 0.05 for most countr
 
 Again, it is interesting to explore at the topic level, what were the sources of changes for one particular group (work week or weekend) between 2019 and 2020. 
 
+{% include topics_diff_2019_2020.html %}
+
 It is interesting to see a few things:
 * the topics Culture.Sport and Geography.Regions.Europe.Europe* are responsible for a negative change in the mean distance both for the consultation difference for weekdays between 2019 and 2020 and for weekends between 2019 and 2020.
 *  Indeed, during COVID-19 period, all sports competitions in all disciplines were canceled. The world of sports was shut down, so people had less reason to research it anymore.
@@ -153,8 +155,6 @@ It is interesting to see a few things:
 However other topics were more solicited than usual. It is the case, for example of **Culture.Media.Media\*** (in particular during the week-end) and **STEM.Biology** (in particular during the work-week). 
 * Due to mobility restrictions during Covid period, people spent more time at home and thus saw more movies, series or documentaries on TV. They had the time to make more research about these topics and to be more entertained than usual which can explain the positive change in the mean distance of the Culture.Media.Media\* topic especially on the week-end without work.
 * Because of this epidemic that has become worldwide, the news and information in general were constantly talking about Covid-19, the search for a vaccine, the pressure on hospitals and caregivers and in general about the medical and health fields. Thus, people tended to make more research about pages related to STEM.Biology topic for information and also for reassurance.
-
-{% include topics_diff_2019_2020.html %}
 
 # 4. Conclusion 
 
