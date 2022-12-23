@@ -62,17 +62,27 @@ However, our intuition has been partially confirmed by computing a first approac
 
 {% include pvalues.html %}
 
-The heatmaps above reflect the results of the p-value between each day of the week for each language and for 2019 year obtained from t-tests. Dark green cells means that we do not reject the null hypothesis of equal population means between the 2 different days (p-value greater than or equal to 0.05). By bearing in mind that these results could be biased by the presence of cofounders, we can see that some languages have groups of days within the week. This pattern within the week depends on the languages. 
+The heatmaps above reflect the results of the p-value between each day of the week for each language and for 2019 year obtained from t-tests. Dark green cells means that we do not reject the null hypothesis of equal population means between the 2 different days (p-value superior or equal to 0.05). By bearing in mind that these results could be biased by the presence of cofounders, we can see that some languages have groups of days within the week. This pattern within the week depends on the languages. 
 
 Please, note that the p-value do not reflect any notion of similarity between days and that we can't really get more out of these results.
 
 Thus, to get a notion of similarity between days of the week and also between days within a group of days, we decided to calculate **attention vectors and similarity matrices**. The latter will allow us to see inside each group which day is similar to which day and if the similarity is repeated among groups.
 
+[![Av-similarity-matrix.png](https://i.postimg.cc/nchD0b0K/Av-similarity-matrix.png)](https://postimg.cc/gr1j259r)
 
 
 # 3. Does the week change with Covid?
 
-{% include most_read_topics.html %}
+
+{% include topics_diff_weekdays_weekends.html %}
+
+| **Country**          | Danemark `da`| <font color='green'>Finland </font> `fi`|Italy `it`| Japan `ja`| Netherlands `nl`|Norway `no`| Sweden `sv`|
+|:---------------------:|:-----------:|:----------:|:---------:|:--------------:|:---------:|:--------------:|:------------:|
+| **year:after_change coeff**| 0.002466 |<font color='green'>0.009672</font>  |0.000469 | -0.002221 | 0.002427 | -0.000922 | 0.000526 |
+| **year:after_change pvalue**| 0.323081 |<font color='green'>0.009905</font>  |0.603516 | 0.359529| 0.447895 |0.749307 |0.834459|
+
+{% include topics_diff_2019_2020.html %}
+
 
 # 4. References
 
